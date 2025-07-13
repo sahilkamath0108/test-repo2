@@ -6,9 +6,7 @@ function Row({ title, isLargeRow }) {
     <div className="row">
       <h2>{title}</h2>
       <div className="row__posters">
-        {/* Several row__poster images would go here */}
-        <img className={`row__poster ${isLargeRow && "row__posterLarge"}`} src="https://via.placeholder.com/150" alt="Movie Poster" />
-        <img className={`row__poster ${isLargeRow && "row__posterLarge"}`} src="https://via.placeholder.com/150" alt="Movie Poster" />
+        {/* Posters will be mapped here */}
       </div>
     </div>
   );

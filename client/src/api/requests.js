@@ -1,16 +1,11 @@
-// It's highly recommended to store your API key in an environment variable
-// For now, you can replace 'YOUR_API_KEY' with your actual key from TMDB
-const API_KEY = 'YOUR_API_KEY';
-
+// API endpoints for your Netflix clone
 const requests = {
-  fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
-  fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
-  fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
-  fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
-  fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
-  fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
-  fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
-  fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
+  fetchFeatured: '/movies/featured',
+  fetchTrending: '/movies/trending',
+  fetchTopRated: '/movies/top-rated',
+  fetchActionMovies: '/movies/genres/action',
+  fetchComedyMovies: '/movies/genres/comedy',
+  fetchHorrorMovies: '/movies/genres/horror',
 };
 
 export default requests;

@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-// Create a base instance for TMDB API
+// Base URL for API requests
 const instance = axios.create({
-  baseURL: 'https://api.themoviedb.org/3',
+  baseURL: 'http://localhost:5000/api', // Your server's URL
 });
 
 export default instance;
