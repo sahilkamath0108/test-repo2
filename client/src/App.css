@@ -1,0 +1,22 @@
+.App { background-color: #111; color: #fff; font-family: Arial, sans-serif; }
+
+.App-header { padding: 20px; text-align: center; border-bottom: 1px solid #333; }
+
+.movie-row { padding: 20px; }
+
+.movie-row h2 { margin-bottom: 10px; }
+
+.movie-list { display: flex; overflow-x: auto; /* Allows horizontal scrolling for movies */ padding-bottom: 15px; /* Space for scrollbar */ }
+
+.movie-poster { width: 150px; /* Adjust as needed */ height: 220px; /* Adjust as needed */ background-color: #333; /* Placeholder color */ margin-right: 10px; border-radius: 5px; cursor: pointer; transition: transform 0.2s; }
+
+.movie-poster:hover { transform: scale(1.05); }
+
+/* Basic styling for scrollbar */
+.movie-list::-webkit-scrollbar { height: 8px; }
+
+.movie-list::-webkit-scrollbar-track { background: #333; border-radius: 4px; }
+
+.movie-list::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+
+.movie-list::-webkit-scrollbar-thumb:hover { background: #555; }
